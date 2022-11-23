@@ -18,7 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::view("/main", "main");
+Route::view("/template", "template");
 
 Route::controller(UserController::class)->group(function(){
     Route::get("/login", "login");
